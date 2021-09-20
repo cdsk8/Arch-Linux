@@ -1,0 +1,11 @@
+First renew the package database
+# pacman -Syu
+
+Then we install this packages:
+#pacman -S xorg plasma plasma-wayland-session kde-applications
+
+Then we enable all the services
+
+# systemctl enable sddm.service
+
+This is the login service.
