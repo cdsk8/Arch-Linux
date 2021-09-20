@@ -5,6 +5,11 @@ In this file we will only explain the esentials to get Archlinux running on a sy
 
 Then make all the configurations needed and chroot into the mounted point
 
+We here enable all the needed services : internet for example
+
+# systemctl enable dhcpcd
+# systemctl enable iwd / NetworkManager.service
+
 We chose to configure our system with systemd as a bootloader so at the end, before rebooting:
 
 #bootctl install
