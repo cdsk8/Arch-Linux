@@ -1,0 +1,12 @@
+In this file we will only explain the esentials to get Archlinux running on a system.
+ ---- Please follow the Archlinux installation guide as every detail will be explained there and not here  ---
+  After mounting the img into a mount point:
+# pacstrap /mnt base linux linux-firmware base-devel dhcpcd iwd networkmanager vim nano
+
+Then make all the configurations needed and chroot into the mounted point
+
+We chose to configure our system with systemd as a bootloader so at the end, before rebooting:
+
+#bootctl install
+
+With that all the system should be properly configured and ready to run on its own.
